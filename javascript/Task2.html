@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .container {
+            border: 1px solid black;
+            padding: 20px;
+            width: 450px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .box{
+            margin-bottom: 20px;
+        }
+
+        .box label,
+        .box input{
+            margin: 10px 0;
+        }
+
+
+        .button-container{
+            display: flex;
+            align-items: center;
+        }
+        .btn{
+            display: grid;
+            grid-template-columns: repeat(3,0fr) ;
+            gap: 5px;
+            margin: 10px 0;
+        }
+
+        button{
+             width: 40px;
+             height: 40px;
+             margin: 5px;
+             flex:0 1 auto;
+        }
+
+        .result{
+            margin: 0 auto;
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+        <div class="box">
+
+            <h3>Maths Operations</h3>
+
+                <label for="num1">Enter 1st number:</label>
+                <input type="number" id="num1" name="num1" required>
+                
+               <br>
+
+               <label for="num2">Enter 2nd number:</label>
+               <input type="number" id="num2" name="num2" required>
+        </div>
+    <div class="button-container">
+        <div class="btn">
+            <button type="button" onclick="cal('+')">+</button>
+            <button type="button" onclick="cal('-')">-</button>
+            <button type="button" onclick="cal('*')">*</button>
+            <button type="button" onclick="cal('/')">/</button>
+            <button type="button" onclick="cal('%')">%</button>
+        </div>
+
+        <p class="result">Answer is:<span id="result"></span></p>
+    </div>
+</div>
+
+<script src="Task2.js"></script>
+</body>
+</html>

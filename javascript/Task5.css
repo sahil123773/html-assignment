@@ -1,0 +1,28 @@
+body{
+    margin: 0;
+    background-color:#532187;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container{
+    text-align: center;
+}
+
+#changeColorBtn {
+    background-color: #98ffea;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+#colorcode{
+    margin-top: 20px;
+    font-size: 24px;
+    color: black;
+}

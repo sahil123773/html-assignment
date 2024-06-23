@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container {
+            border: 1px solid black;
+            padding: 20px;
+            width: 500px;
+            margin: auto;
+        }
+
+        .box{
+            margin-bottom: 10px;
+        }
+
+        input{
+            margin: 20px 0;
+        }
+
+        .container input {
+            margin-bottom: 10px;
+        }
+        .form {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .form label {
+            flex: 1;
+            margin-right: 10px;
+            text-align: left;
+        }
+        .form input {
+            flex: 1;
+        }
+
+        .button{
+            display: flex;
+            justify-content: center;
+        }
+
+        .res{
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h3>Marksheet of Information Technology</h3>
+            <p><center>Enter Marks</center></p>
+            <div class="form">            
+                1.<label for="c" >C language</label>
+                <input type="number" id="c">
+            </div>
+            <div class="form">
+                2.<label for="cp">C++ language</label>
+                <input type="number" id="cp">
+            </div>
+            <div class="form">
+                3.<label for="Database">Database</label>
+                <input type="number" id="Database">
+            </div>
+            <div class="form">
+                4.<label for="HTML">HTML  </label>
+                <input type="number" id="HTML">
+            </div>
+            <div class="form">
+                5.<label for="CSS">CSS  </label>
+                <input type="number" id="CSS">
+            </div>
+            <div class="form">
+                6.<label for="php">php </label>
+                <input type="number" id="php">
+            </div>
+            <div class="form">
+                7.<label for="Corejava">Core java </label>
+                <input type="number" id="Corejava">
+            </div>
+            <div class="button">
+                <button onclick="calculate()">Result</button>
+            </div>
+            <div class="res">
+                <p>Total is : <span id="total">&nbsp; &nbsp;</span> / 350</p>
+                <p>Percentage is : <span id="percentage">&nbsp; &nbsp;</span>%</p>
+            </div>
+        </div>
+    </div>
+    <script src="Task3.js"></script>
+</body>
+</html>
