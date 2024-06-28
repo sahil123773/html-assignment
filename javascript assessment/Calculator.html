@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cal.css">
+</head>
+<body>
+    <table id="calcu">
+        <tr>
+            <td colspan="4">
+                <input type="text" id="result">
+            </td>
+        </tr>
+        <tr>
+            <td><input type="button" value="7" class="half-black"  onclick="pick('7')"></td>
+            <td><input type="button" value="8" class="half-black" onclick="pick('8')"></td>
+            <td><input type="button" value="9" class="half-black" onclick="pick('9')"></td>
+            <td><input type="button" value="Del" class="half-gray" onclick="clearDisplay()"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="4" class="half-black" onclick="pick('4')"></td>
+            <td><input type="button" value="5" class="half-black" onclick="pick('5')"></td>
+            <td><input type="button" value="6" class="half-black" onclick="pick('6')"></td>
+            <td><input type="button" value="/" class="half-gray" onclick="pick('/')"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="1" class="half-black" onclick="pick('1')"></td>
+            <td><input type="button" value="2" class="half-black" onclick="pick('2')"></td>
+            <td><input type="button" value="3" class="half-black" onclick="pick('3')"></td>
+            <td><input type="button" value="*" class="half-gray" onclick="pick('*')"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="" class="half-black"></td>
+            <td><input type="button" value="" class="half-black"></td>
+            <td><input type="button" value="" class="half-black"></td>
+            <td><input type="button" value="-" class="half-gray"onclick="pick('-')"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="." class="half-black" onclick="pick('.')"></td>
+            <td><input type="button" value="0" class="half-black" onclick="pick('0')"></td>
+            <td><input type="button" value="=" class="half-black" onclick="pick('=')"></td>
+            <td><input type="button" value="+" class="half-gray" onclick="pick('+')"></td>
+        </tr>
+    </table>
+
+    <script src="calculator.js"></script>
+</body>
+</html>

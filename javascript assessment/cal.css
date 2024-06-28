@@ -1,0 +1,47 @@
+body{
+    background-color: #42a5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+   }
+   
+   #calcu{
+       border-collapse: collapse;
+       width: 350px;
+       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+       border-radius: 5px;
+       overflow: hidden;
+   }
+   
+   #result{
+       width: 100%;
+       font-size: 2em;
+       text-align: right;
+       padding: 10px;
+       border: none;
+       box-sizing: border-box;
+   }
+   
+   input[type="button"]{
+       width: 100%;
+       padding: 20px;
+       font-size: 1.5em;
+       border: none;
+       cursor: pointer;
+   }
+   
+   td {
+       padding: 0;
+   }
+   
+   .half-black{
+       background-color: black;
+       color: white;
+   }
+   
+   .half-gray{
+       background-color: gray;
+       color: white;
+   }
