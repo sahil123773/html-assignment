@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            
+           background-color: red;
+        }
+
+        .nav a{
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        .img{
+            display: inline-block;
+            position: relative;
+        }
+        
+        .img img{
+            width: 300px;
+            height: 300px;
+        }
+
+        .img .nav a {
+            position: absolute;
+            top: 10px;
+            left: 20px; 
+            padding: 5px 10px;
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .nav-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .ri{
+            margin: 0;
+            padding-left: 790px;
+        }
+        .new {
+            font-size: 1em;
+            font-weight: bold;
+            color: white;
+            text-align: right;
+        }
+
+        .vertical{
+            width: 600px;
+            display: inline-block;
+            vertical-align: top;
+            background-color: #D32F2F;;
+            padding: 0;
+            height: 100%;
+        }
+
+        .vertical ol{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .vertical ol li {
+            padding: 12px 20px;
+            text-align: center;
+            background-color:#D32F2F;
+            color: white;
+            font-weight: bold;
+            border-bottom: 1px solid white;
+            display: flex;
+            align-items: center;
+            
+        }
+        
+        .right{
+            display: inline-block;
+            color: white;
+            vertical-align: top;
+            text-align: left;
+        }
+
+        .right h2{
+        margin: 0;
+         padding-right: 200px;
+         padding-left: 30px;
+        }
+
+        .right p{
+            margin-top: 250px;
+        }
+        .right p a{
+            color: white;
+        }
+        .second {
+            background-color: #FFFF00;
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .second .container {
+            display: flex;
+            justify-content: space-between; 
+        }
+
+        .left {
+            flex: 1; 
+            padding: 10px;
+            background-color:orange;
+        }
+
+        .rig {
+            display: flex;
+            flex-direction:row;
+            flex: 3; 
+            padding: 10px;
+            background-color:yellow;
+        }
+
+        .left .tit {  
+            margin: 40px;
+            text-align: center;
+            color: white;
+            background-color: orangered;
+            width: 30%; 
+            border-radius: 5px;
+            box-shadow: 0 1px 1px;
+        }
+
+
+        .par, .par2 {
+            padding: 10px;
+            width: auto; 
+            height: auto; 
+            text-align: justify;
+        }
+
+        .left .img img {
+            width: 150px;
+            height: auto; 
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .rig h2 {
+            margin: 0;
+
+            padding-right: 200px;
+            padding-left: 30px;
+            color: red;
+        }
+
+        .rig p {
+            margin-top: 20px; 
+        }
+
+
+        .rig form {
+            margin-left: 10px;
+            
+           
+        }
+
+
+        .rig form input[type="text"] {
+            margin-bottom: 10px;
+            padding: 5px;
+            width: 200px; 
+        
+            margin-right: 20px;
+        }
+
+        .rig form button{
+            background-color: red;
+            color: white;
+            padding: 20px;
+            display: inline-block;
+            width: 100px;
+        }
+
+        .n {
+            border:none;
+            height: 3px;
+            background-color: white; 
+            border-radius: 10px;
+        }
+
+        .par3{
+            margin: 40px 0; 
+            padding-left: 40px;
+            height: 150px;
+            text-align: justify;
+            color: black;
+        }
+
+        .lastpar{
+            display: inline-block;
+            vertical-align: top;
+            width: 200px;
+            height: 100%;
+            position: relative;
+          
+           
+        }
+
+        .var{
+            display:inline-block;
+            width: 3px; 
+            height: 100%; 
+            background-color: white;
+            margin-left: 385px; 
+            vertical-align:top;
+            position: absolute;
+            
+        }
+
+        .h {
+            border: none;
+            height: 2px;
+            background-color: white; 
+            width: 100%; 
+            margin-top: 10%; 
+            margin-left: -89%; 
+            margin-right: -86%;
+        }      
+        .lasr{
+            margin-top: 110px;
+            font-size: 20px;
+            font-weight: bold;
+            margin-right: -900px;
+            text-align: left;
+            color: red;
+        }
+
+        .welcome{
+            margin-left: -105px;
+            justify-content: right;
+            display: inline-block;
+        }
+        .img1 {
+            margin: 40px;
+            margin-left: -100px;
+            overflow: hidden; 
+            
+        }
+        .img1 img {
+            width: 320px;
+            height: 250px;
+            padding: 3px;
+            border: 20px solid white;
+        }
+
+        .img1-content-container {
+            display: flex;
+            align-items: flex-start; 
+            gap:290px;
+        }
+        .content {
+            color: black;
+            font-size: 15px;
+            text-align: justify;
+            max-width: 600px;
+        }
+
+        .main{
+            display: flex;
+            align-items: flex-start;
+            background-color: orange;
+        }
+
+        .class{
+            text-align: center;
+            font-size: 3em;;
+            margin: 6px auto;
+            padding-top: 60px;
+            padding-left: 100px;
+            padding-right: 400px;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+
+        .nam2{
+            background-color: orangered;
+            text-align: center;
+            padding: 5px;
+            margin: 0 auto;
+            max-width: 800px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .nam2 a{
+            color: #fff;
+            text-decoration: none;
+            margin-left: 70px;
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+      <div class="nav-container">
+            <div class="nav">
+                <a href="">HOME</a>
+                <a href="">Sitemap</a>
+            </div>
+            <div class="ri">
+                <p class="new">THE ALBION COLLEGE</p>
+            </div>
+        </div>
+        <hr>
+        <div class="img">
+            <img src="jazz.jpg" alt="Jazz Image">
+            <div class="nav">
+                <a href="">Contact Us</a>
+            </div>
+        </div>
+        <div class="vertical">
+            <ol>
+                 <li>HOME</li>
+                 <li>MEET US</li>
+                 <li>BOOK US</li>
+                 <li>CONCERT</li>
+                 <li>CD</li>
+                 <li>MULTIMEDIA</li>
+                 <li>FORM</li>
+            </ol>
+
+        </div>
+        <div class="right">
+            <h2 class="right">EUPHONICS</h2>
+
+         <p><a href="#">CLICK HERE</a> to schedule the Euphonics for your event <br> (Ask about our  discount Student Organization Rate)</p>
+        </div>
+    </div>
+    <div class="second">
+        <div class="container">
+            <div class="left">
+                <p class="tit">WHAT is NEW</p>
+                <div class="par">Please don't remove the link at <br>the bottom. We have worked<br> hard to make this template and<br> ask that you respect our hard <br>work so we can continue <br>providing you with high quality<br> templates.</div>
+                <div class="par2">If you really want to <br> remove the link you can <br> buy a copyright free <br> version on our website.</div>
+                <div class="img">
+                    <img src="payment-option.jpg" alt="Payment Options">
+                </div>
+            </div>
+            <div class="rig">
+                <h2><b>SIGN UP NOW</b> and Receive updates<br>on Concerts,CD Releases,and  Gigs! </h2>
+                 <form>
+                    Name:<input type="text"><br>Email:<input type="text"><button id="new">submit</button>
+                </form>
+                <hr class="h">
+                <div class="lasr">
+                    <p class="welcome">Welcome to the 2005-2006 Albion College Euphonics Website!</p>    
+                    <div class="img1-content-container">
+                        <div class="img1">
+                            <img src="jazz.jpg">
+                        </div>
+                        <div class="content">
+                            <p> This is a template designed by free website <br>templates for you for free you can replace all<br> the text by your own text. This is just a place<br>holder so you can see how the site would look<br> like.<br><br>
+                                If you're having problems editing the<br> template please don't hesitate to ask for help<br> on the forum. You will get help as soon as <br>possible. You can also use the forum to tell <br>us what you like or dislike and what you would <br>like to see more.<br><br>
+                                Your feedback is very important to us and we<br> will do everything to fulfill your wishes.<br><br>
+                                <u>More...</u></p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <hr class="n">
+            <div class="main">
+                <div class="lastpar">
+                        <p class="par3">Please don't remove the link at the bottom. We worked hard to make this template and hope that you respect our hard work so we can continue providing you with quality templates.</p>
+                </div>
+                <div class="var"></div>
+                <div class="class">
+                    <p>November <b>Gigs!</p>
+                        <div class="nam2">
+                            <a href="">Date</a>
+                            <a href="">Time</a>
+                            <a href="">Location</a>
+                            <a href="">Description</a>
+                        </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
