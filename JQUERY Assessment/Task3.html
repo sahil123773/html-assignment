@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        .container{
+            width: 60%;
+            margin: 50px auto;
+            text-align: center;
+        }
+        #task-list {
+            list-style: none;
+            padding: 10px;
+        }
+
+       /* .li{
+            background-color: #d4edda;
+            border-radius: 4px;
+            padding: 10px;
+            margin: 0 auto;
+            margin-bottom: 10px;
+            position: relative;
+        }*/
+
+
+
+        .adds{
+            background-color: rgb(84, 240, 120);
+            border-radius: 4px;
+            padding: 10px;
+            margin-bottom: 10px;
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+        }
+
+
+        #task-input{
+            width: 40%;
+            outline: none;
+            border-radius: 2px;
+        }
+
+        .input-group {
+            flex-grow: 1;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
+        .delete{
+            background: none;
+            cursor: pointer;
+            color: black;
+            border: none;
+        }
+
+        #add-task-btn{
+            background-color: #28a745;
+            color: white;
+            border: none;
+            height: 25px;
+            cursor: pointer;
+            border-radius: 2px 2px 2px 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>My Tasks:</h2>
+        <ul id="task-list">
+         </ul>
+        <div class="input-group">
+            <input type="text" id="task-input" placeholder="Add Task">
+            <button id="add-task-btn">+</button>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            $("#add-task-btn").click(function(){
+                var input=$('#task-input').val();
+                if(input!==''){
+                    $("#task-list").append('<li class="adds">' + input + ' <button class="delete">X</button></li>' )
+                    $('#task-input').val(' ');
+                    alert("task added successfully");
+                }else{
+                    alert("error");
+                }
+
+                $('.delete').click(function(){
+                        $(this).parent().css('text-decoration-line',  'line-through');
+                        setTimeout(() => {
+                            $(this).parent().remove();
+                            alert("Task deleted")
+                        }, 100);
+                })
+                
+            })
+        })
+    </script>
+</body>
+</html>
