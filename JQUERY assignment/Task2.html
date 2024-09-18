@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+
+            .card-container{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                text-align: center;
+
+            }
+
+          .card{
+            width: 200px;
+            padding: 0;
+            border: 1px solid black;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            text-align: center;
+        }
+        .card img{
+            width: 100%;
+            height: 100%;
+        }
+        .card1{
+            width: 200px;
+            padding: 0;
+            border: 1px solid black;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            
+            text-align: center;
+
+        }
+        .card1 img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+        }
+        .card2{
+            width: 200px;
+            padding: 0;
+            border: 1px solid black;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            text-align: center;
+        }
+        .card2 img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .button-contain{
+            display: flex;
+            justify-content: center;
+            width: 50%;
+        }
+
+        .button-contain button{
+            margin-top: 5px;
+            margin-left: 1300px;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="card-container">
+        <div class="card">
+            <img src="images.jpeg">
+        </div>
+
+        <div class="card1">
+            <img src="images.jpeg">
+        </div>
+
+        <div class="card2">
+            <img src="images.jpeg">
+        </div>
+    </div>
+    <div class="button-contain">
+        <button class="btn5">Show</button>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $(".btn5").click(function(){
+                $(".card2").fadeOut();
+
+            })
+        })
+    </script>
+</body>
+</html>
