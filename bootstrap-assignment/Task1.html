@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel Example</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+          .carousel-item{
+      height: 300px;
+    }
+
+    .carousel-item div{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: gray;
+      color: white;
+      height: 100%;
+      font-size: 30px;
+    }
+
+    .carousel-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; 
+      align-items: flex-start;    
+      text-align: left;     
+      padding: 20px; 
+      margin: 0;  
+    }
+    .carousel-content h3 {
+      margin: 0;  
+      padding: 0; 
+      padding-top: 40px;
+      align-items: flex-end;    
+      text-align: left;  
+      padding-left: 800px;   
+    }
+ 
+    .carousel-content p{
+      font-size: 20px;
+      margin: 0;  
+      padding-top: 30px;
+      padding-left:250px;
+    }
+    .left-align {
+      text-align: left;  
+      display: block;   
+      padding-left: 510px;
+    }
+    .button-content {
+      padding-left: 990px;
+   }
+
+   .contents img{
+    width: 20px;
+    background-color: grey;
+   }
+
+    .circle-card {
+      display: flex;
+      width: 200px; 
+      height: 200px; 
+      border-radius: 50%; 
+      justify-content: center;
+      overflow: hidden; 
+      text-align: center; 
+      position: relative;
+      margin: 0 auto; 
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    }
+          
+    .circle-card img {
+      width: 100%; 
+      height: auto; 
+    }
+          
+    .circle-card-content {
+      position: absolute; 
+      top: 50%; 
+      left: 50%; 
+      transform: translate(-50%, -50%); 
+      color: #fff;
+     }
+          
+    .circle-card h5 {
+      margin: 0; 
+      font-size: 1.2rem; 
+      
+    }
+
+          
+    .circle-card p {
+        margin: 5px 0 0;
+        font-size: 0.9rem; 
+    }
+          
+    .circle-card-bg {
+      position: absolute; 
+      top: 0; 
+      left: 0; 
+      width: 100%; 
+      height: 100%; 
+      background: rgba(0, 0, 0, 0.5);
+    }
+    .card-title {
+       margin-top: 10px; 
+       font-size: 1.2rem;
+       padding-left: 20px;
+    }
+    .btn{
+      width: 90%;
+      padding-left:70px;
+    }
+
+    .font{
+      font-size: 50px;
+    }
+
+    .new{
+      gap:350px;
+    }
+
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Carousel</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="carousel-content">
+              <h3>One more for good measure.</h3>
+              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. <br><span class="left-align">Nullam id dolor id nibh ultricies vehicula ut id elit.</span></p>
+
+              <div class="button-content">
+                <button class="btn btn-primary">Browse gallery</button>
+              </div>
+
+            </div>
+          </div>
+          <div class="carousel-item ">
+            <div class="carousel-content">
+              <h3>One more for good measure.</h3>
+              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. <br><span class="left-align">Nullam id dolor id nibh ultricies vehicula ut id elit.</span></p>
+
+              <div class="button-content">
+                <button class="btn btn-primary">Browse gallery</button>
+              </div>
+
+            </div>
+          </div>
+          <div class="carousel-item ">
+            <div class="carousel-content">
+              <h3>One more for good measure.</h3>
+              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. <br><span class="left-align">Nullam id dolor id nibh ultricies vehicula ut id elit.</span></p>
+
+              <div class="button-content">
+                <button class="btn btn-primary">Browse gallery</button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-4 text-center">
+                <div class="circle-card">
+                    <div class="circle-card-bg"></div>
+                </div>
+                <h5 class="card-title">Heading </h5>
+                <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi quod nostrum ut illum voluptatibus error id, consequatur inventore saepe neque. Labore, excepturi. Ut, quod.</p>
+                <button class="btn btn-dark">View Details</button>
+            </div>
+
+            <div class="col-md-4 text-center">
+                <div class="circle-card">
+                    <div class="circle-card-bg"></div>
+                </div>
+                <h5 class="card-title">Heading </h5>
+                <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi quod nostrum ut illum voluptatibus error id, consequatur inventore saepe neque. Labore, excepturi. Ut, quod.</p>
+                <button class="btn btn-dark">View Details</button>
+            </div>
+
+            <div class="col-md-4 text-center">
+                <div class="circle-card">
+                    <div class="circle-card-bg"></div>
+                </div>
+                <h5 class="card-title">Heading </h5>
+                <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi quod nostrum ut illum voluptatibus error id, consequatur inventore saepe neque. Labore, excepturi. Ut, quod.</p>
+                <button class="btn btn-dark">View Details</button>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <hr>
+
+    <br>
+
+    <div class="d-flex flex-direction-column new">
+
+      <div class="p-4 mb-4">
+        <p class="font">First featurette heading. It'll <br>blow your mind.</p>
+        <p>Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula<br> porta felis euismod semper. Praesent commodo cursus magna, vel <br>scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo."</p>
+      </div>
+
+      <div class="mt-4">
+        <img src="https://dummyimage.com/500x500/808080/000000">
+      </div>
+    </div>
+
+    <br>
+
+    <hr>
+
+    <br>
+
+    <div class="d-flex flex-direction-column new">
+    
+      <div class="p-2">
+        <img src="https://dummyimage.com/500x500/808080/000000">
+      </div>
+      <div class="">
+        <p class="font">Oh yeah.it's that good.See<br>for yourself.</p>
+        <p>Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula<br> porta felis euismod semper. Praesent commodo cursus magna, vel <br>scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo."</p>
+      </div>
+    </div>
+
+    <br>
+
+    <hr>
+
+    <br>
+
+
+    <div class="d-flex flex-direction-column new">
+
+      <div class="p-4 mb-4">
+        <p class="font">And lastly,this one.<br>Checkmate.</p>
+        <p>Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula<br> porta felis euismod semper. Praesent commodo cursus magna, vel <br>scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo."</p>
+      </div>
+
+      <div class="mt-4">
+        <img src="https://dummyimage.com/500x500/808080/000000">
+      </div>
+    </div>
+
+    <br>
+    
+    <hr>
+
+    <footer class="text-muted py-0">
+      <div class="container-fluid px-0 d-flex justify-content-between">
+          <span>© 2017-2018 Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></span>
+          <a href="#" class="text-muted">Back to top</a>
+      </div>
+   </footer>
+    
+  
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
