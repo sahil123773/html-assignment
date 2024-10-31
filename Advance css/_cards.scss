@@ -1,0 +1,43 @@
+// _cards.scss
+@use 'variables';
+.cards {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 0;
+  gap: 1rem; 
+  .card {
+    width: 30%;
+    background-color: #fff;
+    text-align: center;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 8px; 
+    transition: transform 0.3s; 
+
+    &:hover {
+      transform: scale(1.05); // Slight zoom effect on hover
+    }
+
+    h3 {
+      color: variables.$secondary-color;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      color: variables.$text-color;
+      margin-bottom: 1rem;
+    }
+
+    .button {
+      background-color: variables.$primary-color;
+      color: #fff;
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 1rem;
+      display: inline-block;
+      transition: background-color 0.3s; // Smooth background color transition
+
+    }
+  }
+}

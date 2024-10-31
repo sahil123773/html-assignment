@@ -1,0 +1,33 @@
+@use 'variables';
+footer {
+    background-color: variables.$secondary-color;
+    padding: 2rem 0;
+    color: #fff;
+  
+    .section {
+      width: 30%;
+  
+      h4 {
+        color: variables.$primary-color;
+      }
+  
+      ul {
+        list-style-type: none;
+        padding: 0;
+  
+        li {
+          margin-bottom: 0.5rem;
+        }
+  
+        a {
+          color: #fff;
+          text-decoration: none;
+  
+          &:hover {
+            color: variables.$primary-color;
+          }
+        }
+      }
+    }
+  }
+  

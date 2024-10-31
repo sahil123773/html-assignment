@@ -1,0 +1,17 @@
+@use 'variables';
+@use 'header';
+@use 'hero';
+@use 'cards';
+@use 'footer';
+
+body {
+  font-family:variables.$font-stack;
+  color: variables.$text-color;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}

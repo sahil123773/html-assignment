@@ -1,0 +1,34 @@
+// _hero.scss
+@use 'variables';
+.hero {
+  display: flex;
+  align-items: center;
+  background-color: variables.$light-bg;
+  padding: 2rem 0;
+
+  .content {
+    width: 50%;
+
+    h1 {
+      font-size: 1.5rem;
+      color: variables.$secondary-color;
+    }
+
+    p {
+      color: variables.$text-color;
+    }
+
+    .button {
+      background-color:variables.$primary-color;
+      color: #fff;
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 1rem;
+    }
+  }
+
+  .image {
+    width: 50%;
+  }
+}
